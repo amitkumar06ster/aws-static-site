@@ -1,3 +1,3 @@
 function showMessage() {
-    alert("CI/CD Pipeline Working Successfully!");
+    alert("Website Version 2.0 deployed successfully via Jenkins!");
 }
