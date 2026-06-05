@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        AWS_DEFAULT_REGION = 'ap-south-1'
         S3_BUCKET = 'amit-static-site-demo'
     }
 
@@ -16,11 +15,15 @@ pipeline {
 
         stage('Deploy to S3') {
             steps {
-                sh '''
-                aws s3 cp index.html s3://$S3_BUCKET/
-                aws s3 cp style.css s3://$S3_BUCKET/
-                aws s3 cp app.js s3://$S3_BUCKET/
-                '''
+                withAWS(credentials: 'jenkins-s3-user', region: 'ap-south-1') {
+
+                    sh '''
+                    aws s3 cp index.html s3://$S3_BUCKET/
+                    aws s3 cp style.css s3://$S3_BUCKET/
+                    aws s3 cp app.js s3://$S3_BUCKET/
+                    '''
+
+                }
             }
         }
     }
