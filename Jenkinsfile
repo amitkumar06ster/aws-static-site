@@ -1,22 +1,26 @@
 pipeline {
     agent any
 
+    environment {
+        AWS_DEFAULT_REGION = 'ap-south-1'
+        S3_BUCKET = 'amit-static-site-demo'
+    }
+
     stages {
+
         stage('Checkout') {
             steps {
                 echo 'Checking Source Code'
             }
         }
 
-        stage('Build') {
+        stage('Deploy to S3') {
             steps {
-                echo 'Build Successful'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Test Successful'
+                sh '''
+                aws s3 cp index.html s3://$S3_BUCKET/
+                aws s3 cp style.css s3://$S3_BUCKET/
+                aws s3 cp app.js s3://$S3_BUCKET/
+                '''
             }
         }
     }
