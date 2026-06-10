@@ -1,82 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS Static Website CI/CD Demo</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>AWS Static Website CI/CD Project</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    background: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.architecture {
+    text-align: center;
+    line-height: 2;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+}
+</style>
+
 </head>
+
 <body>
 
-    <div class="container">
+<div class="container">
+
+    <div class="header">
         <h1>🚀 AWS Static Website CI/CD Project</h1>
-
-        <h2>Version 3.0</h2>
-
-        <p>
-            This website is automatically deployed using a complete
-            CI/CD pipeline built with GitHub, Jenkins, AWS IAM, and Amazon S3.
-        </p>
-
-        <h3>Project Overview</h3>
-        <ul>
-            <li>Source Code Repository: GitHub</li>
-            <li>Build Automation: Jenkins Pipeline</li>
-            <li>AWS Authentication: IAM User & Access Keys</li>
-            <li>Deployment Target: Amazon S3</li>
-            <li>Hosting Type: Static Website Hosting</li>
-            <li>Deployment Method: AWS CLI & Jenkins AWS Steps Plugin</li>
-        </ul>
-
-        <h3>CI/CD Workflow</h3>
-
-        <pre>
-Git Push
-    ↓
-GitHub Repository
-    ↓
-Jenkins Pipeline
-    ↓
-AWS Credentials
-    ↓
-Amazon S3
-    ↓
-Static Website Hosting
-        </pre>
-
-        <h3>Technologies Used</h3>
-
-        <ul>
-            <li>Linux (RHEL/Rocky Linux)</li>
-            <li>Git & GitHub</li>
-            <li>Jenkins</li>
-            <li>AWS IAM</li>
-            <li>AWS CLI</li>
-            <li>Amazon S3</li>
-            <li>Pipeline as Code (Jenkinsfile)</li>
-            <li>CI/CD Automation</li>
-        </ul>
-
-        <h3>Deployment Information</h3>
-
-        <p>
-            Last deployment managed through Jenkins Pipeline and automatically
-            published to Amazon S3.
-        </p>
-
-        <button onclick="showMessage()">View Deployment Status</button>
-
-        <footer>
-            <hr>
-            <p>
-                Created by Amit Kumar | AWS & Jenkins CI/CD Demonstration Project
-            </p>
-        </footer>
+        <h3>Version 3.0</h3>
     </div>
 
-    <script src="app.js"></script>
+    <div class="card">
+        <p>
+            This website is automatically deployed using a complete CI/CD pipeline
+            built with GitHub, Jenkins, AWS IAM, and Amazon S3.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📋 Project Overview</h2>
+
+        <p>Source Code Repository: GitHub</p>
+        <p>Build Automation: Jenkins Pipeline</p>
+        <p>AWS Authentication: IAM User & Access Keys</p>
+        <p>Deployment Target: Amazon S3</p>
+        <p>Hosting Type: Static Website Hosting</p>
+        <p>Deployment Method: AWS CLI & Jenkins AWS Steps Plugin</p>
+    </div>
+
+    <div class="card">
+        <h2>🏗 CI/CD Workflow</h2>
+
+        <div class="architecture">
+            Git Push
+            <br>↓
+            <br>GitHub Repository
+            <br>↓
+            <br>Jenkins Pipeline
+            <br>↓
+            <br>AWS Credentials
+            <br>↓
+            <br>Amazon S3
+            <br>↓
+            <br>Static Website Hosting
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🛠 Technologies Used</h2>
+
+        Linux (RHEL/Rocky Linux) |
+        Git & GitHub |
+        Jenkins |
+        AWS IAM |
+        AWS CLI |
+        Amazon S3 |
+        Pipeline as Code (Jenkinsfile) |
+        CI/CD Automation
+    </div>
+
+    <div class="card">
+        <h2>📦 Deployment Information</h2>
+
+        <p>
+            Last deployment managed through Jenkins Pipeline and
+            automatically published to Amazon S3.
+        </p>
+
+        <button>View Deployment Status</button>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <p>
+            Created by Amit Kumar | AWS & Jenkins CI/CD Demonstration Project
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>
-```
-

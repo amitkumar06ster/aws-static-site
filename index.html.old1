@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Static Website CI/CD Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 AWS Static Website CI/CD Project</h1>
+
+        <h2>Version 3.0</h2>
+
+        <p>
+            This website is automatically deployed using a complete
+            CI/CD pipeline built with GitHub, Jenkins, AWS IAM, and Amazon S3.
+        </p>
+
+        <h3>Project Overview</h3>
+        <ul>
+            <li>Source Code Repository: GitHub</li>
+            <li>Build Automation: Jenkins Pipeline</li>
+            <li>AWS Authentication: IAM User & Access Keys</li>
+            <li>Deployment Target: Amazon S3</li>
+            <li>Hosting Type: Static Website Hosting</li>
+            <li>Deployment Method: AWS CLI & Jenkins AWS Steps Plugin</li>
+        </ul>
+
+        <h3>CI/CD Workflow</h3>
+
+        <pre>
+Git Push
+    ↓
+GitHub Repository
+    ↓
+Jenkins Pipeline
+    ↓
+AWS Credentials
+    ↓
+Amazon S3
+    ↓
+Static Website Hosting
+        </pre>
+
+        <h3>Technologies Used</h3>
+
+        <ul>
+            <li>Linux (RHEL/Rocky Linux)</li>
+            <li>Git & GitHub</li>
+            <li>Jenkins</li>
+            <li>AWS IAM</li>
+            <li>AWS CLI</li>
+            <li>Amazon S3</li>
+            <li>Pipeline as Code (Jenkinsfile)</li>
+            <li>CI/CD Automation</li>
+        </ul>
+
+        <h3>Deployment Information</h3>
+
+        <p>
+            Last deployment managed through Jenkins Pipeline and automatically
+            published to Amazon S3.
+        </p>
+
+        <button onclick="showMessage()">View Deployment Status</button>
+
+        <footer>
+            <hr>
+            <p>
+                Created by Amit Kumar | AWS & Jenkins CI/CD Demonstration Project
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+```
+
