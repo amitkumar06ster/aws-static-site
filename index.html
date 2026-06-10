@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AWS Static Website CI/CD Project</title>
 
 <style>
-body {
+body{
     font-family: Arial, sans-serif;
-    background: #f2f4f7;
-    margin: 0;
-    padding: 30px;
+    background:#f3f4f6;
+    margin:0;
+    padding:30px;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
+.container{
+    max-width:1100px;
+    margin:auto;
 }
 
-.header {
-    background: #1976d2;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 6px;
-    margin-bottom: 20px;
+.header{
+    background:#1976d2;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:6px;
+    margin-bottom:15px;
 }
 
-.header h1 {
-    margin: 0;
+.card{
+    background:white;
+    border-radius:6px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.15);
 }
 
-.card {
-    background: white;
-    border-radius: 6px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+.card h2{
+    margin-top:0;
 }
 
-.card h2 {
-    margin-top: 0;
+.architecture{
+    text-align:center;
+    line-height:2;
+    font-weight:bold;
 }
 
-.architecture {
-    text-align: center;
-    line-height: 2;
+.tech{
+    text-align:center;
 }
 
-.footer {
-    text-align: center;
-    margin-top: 30px;
-    color: #555;
+.status{
+    color:green;
+    font-weight:bold;
+    line-height:2;
+}
+
+.footer{
+    text-align:center;
+    color:#666;
+    margin-top:30px;
+}
+
+button{
+    padding:8px 15px;
+    cursor:pointer;
 }
 </style>
 
@@ -60,19 +74,47 @@ body {
 
 <div class="container">
 
+    <!-- Header -->
+
     <div class="header">
         <h1>🚀 AWS Static Website CI/CD Project</h1>
         <h3>Version 3.0</h3>
     </div>
 
+    <!-- Description -->
+
     <div class="card">
+
         <p>
             This website is automatically deployed using a complete CI/CD pipeline
             built with GitHub, Jenkins, AWS IAM, and Amazon S3.
         </p>
+
+        <p>
+            Every code change pushed to GitHub automatically triggers a Jenkins
+            Pipeline, which validates the source code and deploys the latest
+            website version to Amazon S3 with minimal manual intervention.
+        </p>
+
+        <h3>Key Features</h3>
+
+        <ul style="list-style:none;padding-left:0;line-height:2;">
+            <li>✅ Continuous Integration (CI)</li>
+            <li>✅ Continuous Deployment (CD)</li>
+            <li>✅ Automated Build & Release Process</li>
+            <li>✅ Amazon S3 Static Website Hosting</li>
+            <li>✅ AWS IAM Authentication</li>
+            <li>✅ Jenkins Pipeline Automation</li>
+            <li>✅ Version Controlled Infrastructure</li>
+            <li>✅ End-to-End DevOps Workflow</li>
+        </ul>
+
     </div>
 
+    <!-- Project Overview -->
+
     <div class="card">
+
         <h2>📋 Project Overview</h2>
 
         <p>Source Code Repository: GitHub</p>
@@ -81,12 +123,17 @@ body {
         <p>Deployment Target: Amazon S3</p>
         <p>Hosting Type: Static Website Hosting</p>
         <p>Deployment Method: AWS CLI & Jenkins AWS Steps Plugin</p>
+
     </div>
 
+    <!-- Architecture -->
+
     <div class="card">
+
         <h2>🏗 CI/CD Workflow</h2>
 
         <div class="architecture">
+
             Git Push
             <br>↓
             <br>GitHub Repository
@@ -98,23 +145,54 @@ body {
             <br>Amazon S3
             <br>↓
             <br>Static Website Hosting
+
         </div>
+
     </div>
 
+    <!-- Technologies -->
+
     <div class="card">
+
         <h2>🛠 Technologies Used</h2>
 
-        Linux (RHEL/Rocky Linux) |
-        Git & GitHub |
-        Jenkins |
-        AWS IAM |
-        AWS CLI |
-        Amazon S3 |
-        Pipeline as Code (Jenkinsfile) |
-        CI/CD Automation
+        <div class="tech">
+
+            GitHub |
+            Git |
+            Jenkins |
+            AWS IAM |
+            AWS CLI |
+            Amazon S3 |
+            Linux (RHEL/Rocky Linux) |
+            Jenkinsfile |
+            CI/CD Automation
+
+        </div>
+
     </div>
 
+    <!-- Deployment Status -->
+
     <div class="card">
+
+        <h2>📊 Deployment Status</h2>
+
+        <div class="status">
+
+            ✅ Application Successfully Deployed<br>
+            ✅ CI/CD Pipeline Operational<br>
+            ✅ Automated Deployment Enabled<br>
+            ✅ Amazon S3 Website Running
+
+        </div>
+
+    </div>
+
+    <!-- Deployment Information -->
+
+    <div class="card">
+
         <h2>📦 Deployment Information</h2>
 
         <p>
@@ -123,13 +201,21 @@ body {
         </p>
 
         <button>View Deployment Status</button>
+
     </div>
 
+    <!-- Footer -->
+
     <div class="footer">
+
         <hr>
-        <p>
-            Created by Amit Kumar | AWS & Jenkins CI/CD Demonstration Project
-        </p>
+
+        <p><strong>Created By Amit Kumar</strong></p>
+
+        <p>AWS & Jenkins CI/CD Demonstration Project</p>
+
+        <p>GitHub → Jenkins → AWS IAM → Amazon S3</p>
+
     </div>
 
 </div>
